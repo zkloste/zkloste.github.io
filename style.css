@@ -13,6 +13,13 @@ section{
     scroll-snap-align: start;
 }
 
+.kayak{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+}
+
 .container{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
