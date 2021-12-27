@@ -9,9 +9,10 @@ section{
 
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr 50vh 50vh 1fr;
+    grid-template-rows: 15vh 1fr 1fr 1fr 1fr 1fr 100vh;
+    /*justify-items: center;*/
+    /*align-items: center;*/
     scroll-snap-align: start;
 }
 
@@ -21,10 +22,31 @@ section{
     max-width: 100%;
     height: auto;
     width: 95%;
+    justify-items: center;
+    align-items: center;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+
 }
 
 .introHead{
-    font-size: 10vh;
+    font-size: 6vh;
+    justify-items: center;
+    align-items: start;
+    grid-row-start: 2;
+    grid-column-start: 3;
+    /*grid-column-end: 4;*/
+
+}
+
+.introP{
+    grid-column-start: 3;
+    /*justify-self: start;*/
+    align-self: start;
+    grid-row-start: 3;
+    font: 2vh bold;
+
 }
 
 .container{
