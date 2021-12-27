@@ -9,8 +9,8 @@ section{
 
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 50vh 50vh 1fr;
-    grid-template-rows: 15vh 1fr 1fr 1fr 1fr 1fr 100vh;
+    grid-template-columns: 10vw 1fr 1fr 10vw ;
+    grid-template-rows: 15vh 1fr 1fr 1fr 1fr 1fr 15vh;
     /*justify-items: center;*/
     /*align-items: center;*/
     scroll-snap-align: start;
@@ -19,22 +19,33 @@ section{
 .kayak{
     display: block;
     border-radius: 15px;
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
-    width: 95%;
-    justify-items: center;
-    align-items: center;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    width: 40vw;
+    justify-items: end;
+    align-items: end;
+    grid-row-start: 3;
+    grid-row-end: 5;
     grid-column-start: 2;
 
 }
 
+.mtns{
+    grid-row-start: 7;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: block;
+    height: 20vh;
+    width: 150vw;
+    max-height: 100%;
+    max-width: 100%;
+}
+
 .introHead{
-    font-size: 6vh;
+    font-size: 6vw;
     justify-items: center;
     align-items: start;
-    grid-row-start: 2;
+    grid-row-start: 3;
     grid-column-start: 3;
     /*grid-column-end: 4;*/
 
@@ -44,8 +55,8 @@ section{
     grid-column-start: 3;
     /*justify-self: start;*/
     align-self: start;
-    grid-row-start: 3;
-    font: 2vh bold;
+    grid-row-start: 4;
+    font: 2vw bold;
 
 }
 
