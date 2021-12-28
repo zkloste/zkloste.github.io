@@ -16,6 +16,32 @@ section{
     scroll-snap-align: start;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #666666;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #eeeeee;
+  text-align: center;
+  padding: 15px 18px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #1c87c9;
+}
+
+.navbar .menu li{
+    list-style: none;
+}
+
 .kayak{
     display: block;
     border-radius: 15px;
@@ -58,6 +84,11 @@ section{
     grid-row-start: 4;
     font: 2vw bold;
 
+}
+
+.abtH{
+    grid-column-start: 3;
+    grid-row-start: 3;
 }
 
 .container{
