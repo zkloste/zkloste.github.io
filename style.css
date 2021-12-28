@@ -18,7 +18,7 @@ section{
 
 .navbar {
   overflow: hidden;
-  background-color: #666666;
+  background-color: rgb(73,80,87);
   position: fixed;
   top: 0;
   width: 100%;
@@ -86,9 +86,21 @@ section{
 
 }
 
+
+
 .abtH{
+    grid-column-start: 2;
+    justify-self: end;
+    align-content: end;
+    grid-row-start: 2;
+    padding-right: 5vw;
+}
+
+.abtP{
+    align-content: start;
+    justify-content: start;
+    grid-row-start: 2;
     grid-column-start: 3;
-    grid-row-start: 3;
 }
 
 .container{
@@ -98,6 +110,15 @@ section{
 }
 
 .one {
-    background: rgb(252, 246, 200);
+    /*background: rgb(252, 246, 200);*/
+    background: rgb(237,224,212)
 }
 
+.two {
+    background: rgb(230,204,178);
+    grid-template-columns: 10vw 1fr 1fr 25vw ;
+}
+
+.three{
+    background: rgb(237,224,212)
+}
