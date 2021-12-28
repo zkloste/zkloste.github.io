@@ -11,6 +11,11 @@ section{
     scroll-snap-align: start;
 }
 
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
 .one{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -31,6 +36,22 @@ section{
         "title"
         "desc"
         "footer";
+}
+
+.three{
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15vh .2fr 1.5fr .2fr .25fr .25fr .25fr 25vh;
+       grid-template-areas:
+        "blank blank blank blank"
+        "experience experience experience experience"
+        "work1 work1 work2 work2"
+        /*"work1 desc1 desc2 desc2"*/
+        "skills skills skills skills"
+        "skill1 skill2 skill3 skill4"
+        "skill5 skill6 skill7 skill8"
+        "skill9 skill10 skill11 skill12";
 }
 
 .navbar {
@@ -121,6 +142,18 @@ section{
     grid-area: desc;
     padding-inline: 20vw;
     font-size: 20px;
+}
+
+#expH{
+    grid-area: experience;
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+}
+
+#workPlace1{
+    grid-area: work1;
+    padding: 10px;
 }
 
 .container{
