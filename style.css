@@ -94,7 +94,7 @@ section{
     align-content: end;
     grid-row-start: 2;
     padding-right: 5vw;
-    font-size: 5vh;
+    font-min-size: 5vh;
 }
 
 .abtP{
@@ -102,7 +102,7 @@ section{
     justify-content: start;
     grid-row-start: 2;
     grid-column-start: 3;
-    font-size: 2vh;
+    font-min-size: 3vh;
 }
 
 .container{
