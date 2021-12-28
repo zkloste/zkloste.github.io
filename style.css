@@ -62,10 +62,12 @@ section{
 .staticFoot{
     position: fixed;
     overflow: hidden;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     width: 100%;
+    min-width: 1000px;
     height: 20vh;
+    float: bottom;
 }
 
 #kayak{
@@ -82,6 +84,8 @@ section{
 
 #mtns{
     width: 100%;
+    justify-self: center;
+    align-self: center;
 }
 
 
