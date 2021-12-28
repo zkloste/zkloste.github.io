@@ -59,10 +59,19 @@ section{
     list-style: none;
 }
 
+.staticFoot{
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+}
+
 #kayak{
-    display: block;
+    display: inline;
     border-radius: 15px;
-    max-width: 95%;
+    max-width: 80%;
     height: auto;
     width: auto;
     justify-self: center;
@@ -72,13 +81,7 @@ section{
 }
 
 #mtns{
-    grid-area: footer;
-    display: block;
-    /*height: 20vh;*/
-    width: 100vw;
-    max-height: 100%;
-    max-width: 100%;
-    /*overflow: hidden;*/
+    width: 100%;
 }
 
 
@@ -133,10 +136,10 @@ section{
     background: rgb(237,224,212)
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
     .one{
         grid-template-columns: 1fr;
-        grid-template-rows: 15vh .5fr .25fr 1fr 15vh;
+        grid-template-rows: 15vh .5fr .25fr 1.5fr 15vh;
         grid-template-areas:
             "blank"
             "title"
@@ -154,7 +157,8 @@ section{
     #introP{
         align-self: start;
         justify-self: center;
-        font-size: 6vw;
+        font-size: 30px;
+        padding: 10px;
     }
 
     .navbar a{
