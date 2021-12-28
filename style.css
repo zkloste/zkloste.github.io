@@ -9,10 +9,14 @@ section{
 
     height: 100vh;
     display: grid;
-    grid-template-columns: 10vw 1fr 1fr 10vw ;
-    grid-template-rows: 15vh 1fr 1fr 1fr 1fr 1fr 15vh;
-    /*justify-items: center;*/
-    /*align-items: center;*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15vh 1fr 1fr 15vh;
+    grid-template-areas:
+        "blank blank"
+        "homePic title"
+        "homePic desc"
+        "footer footer";
+
     scroll-snap-align: start;
 }
 
@@ -42,24 +46,20 @@ section{
     list-style: none;
 }
 
-.kayak{
+#kayak{
     display: block;
     border-radius: 15px;
     max-width: 95%;
     height: auto;
-    width: 40vw;
-    justify-items: end;
-    align-items: end;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    grid-column-start: 2;
+    width: auto;
+    justify-self: center;
+    align-self: center;
+    grid-area: homePic;
 
 }
 
-.mtns{
-    grid-row-start: 7;
-    grid-column-start: 1;
-    grid-column-end: 5;
+#mtns{
+    grid-area: footer;
     display: block;
     height: 20vh;
     width: 150vw;
@@ -67,22 +67,19 @@ section{
     max-width: 100%;
 }
 
-.introHead{
-    font-size: 6vw;
-    justify-items: center;
-    align-items: start;
-    grid-row-start: 3;
-    grid-column-start: 3;
-    /*grid-column-end: 4;*/
+#introHead{
+    font-size: 60px;
+    justify-self: start;
+    align-self: end;
+    grid-area: title;
 
 }
 
-.introP{
-    grid-column-start: 3;
-    /*justify-self: start;*/
+#introP{
+    grid-area: desc;
+    justify-self: start;
     align-self: start;
-    grid-row-start: 4;
-    font: 2vw bold;
+    font: 30px bold;
 
 }
 
@@ -123,4 +120,31 @@ section{
 
 .three{
     background: rgb(237,224,212)
+}
+
+@media only screen and (max-width: 550px) {
+    section{
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh .5fr .25fr 1fr 15vh;
+        grid-template-areas:
+            "blank"
+            "title"
+            "desc"
+            "homePic"
+            "footer";
+    }
+
+    #introHead{
+        align-self: end;
+        justify-self: center;
+        font-size: 10vw;
+        font-min-size: 20px;
+
+    }
+    #introP{
+        align-self: start;
+        justify-self: center;
+        font-size: 6vw;
+    }
+
 }
