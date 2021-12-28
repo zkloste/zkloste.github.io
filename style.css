@@ -112,6 +112,7 @@ section{
     grid-area: title;
     justify-self: center;
     align-content: end;
+    font-size: 30px;
 }
 
 #abtP{
@@ -119,6 +120,7 @@ section{
     justify-content: center;
     grid-area: desc;
     padding-inline: 20vw;
+    font-size: 20px;
 }
 
 .container{
