@@ -8,7 +8,11 @@
 section{
 
     height: 100vh;
-    display: grid;
+    scroll-snap-align: start;
+}
+
+.one{
+        display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 15vh 1fr 1fr 15vh;
     grid-template-areas:
@@ -16,8 +20,17 @@ section{
         "homePic title"
         "homePic desc"
         "footer footer";
+}
 
-    scroll-snap-align: start;
+.two{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh .2fr 1.8fr 25vh;
+       grid-template-areas:
+        "blank"
+        "title"
+        "desc"
+        "footer";
 }
 
 .navbar {
@@ -67,6 +80,8 @@ section{
     max-width: 100%;
 }
 
+
+
 #introHead{
     font-size: 60px;
     justify-self: start;
@@ -85,21 +100,17 @@ section{
 
 
 
-.abtH{
-    grid-column-start: 2;
-    justify-self: end;
+#abtH{
+    grid-area: title;
+    justify-self: center;
     align-content: end;
-    grid-row-start: 2;
-    padding-right: 5vw;
-    font-min-size: 5vh;
 }
 
-.abtP{
+#abtP{
     align-content: start;
-    justify-content: start;
-    grid-row-start: 2;
-    grid-column-start: 3;
-    font-min-size: 3vh;
+    justify-content: center;
+    grid-area: desc;
+    padding-inline: 20vw;
 }
 
 .container{
@@ -115,7 +126,6 @@ section{
 
 .two {
     background: rgb(230,204,178);
-    grid-template-columns: 10vw 1fr 1fr 25vw ;
 }
 
 .three{
@@ -123,7 +133,7 @@ section{
 }
 
 @media only screen and (max-width: 550px) {
-    section{
+    .one{
         grid-template-columns: 1fr;
         grid-template-rows: 15vh .5fr .25fr 1fr 15vh;
         grid-template-areas:
@@ -137,14 +147,18 @@ section{
     #introHead{
         align-self: end;
         justify-self: center;
-        font-size: 10vw;
-        font-min-size: 20px;
+        font-size: 45px;
 
     }
     #introP{
         align-self: start;
         justify-self: center;
         font-size: 6vw;
+    }
+
+    .navbar a{
+        font-size: 25px;
+        font-stretch: condensed;
     }
 
 }
