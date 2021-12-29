@@ -42,12 +42,11 @@ ul {
     height: 200vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 15vh .2fr 1.5fr .2fr .25fr .25fr .25fr 25vh;
+    grid-template-rows: 15vh 10vh .6fr .1fr 10vh 10vh .25fr 25vh;
        grid-template-areas:
         "blank blank blank blank"
         "experience experience experience experience"
         "work1 work1 work2 work2"
-        /*"work1 desc1 desc2 desc2"*/
         "skills skills skills skills"
         "skill1 skill2 skill3 skill4"
         "skill5 skill6 skill7 skill8"
@@ -153,7 +152,97 @@ ul {
 
 #workPlace1{
     grid-area: work1;
+    padding: 20px;
+    align-self: start;
+    justify-self: center;
+}
+
+#responsibility1{
+    padding-top: 10px;
+    text-decoration: underline;
+
+}
+
+#workPlace2{
+    grid-area: work2;
+    padding: 20px;
+    align-self: start;
+    justify-self: center;
+}
+#responsibility2{
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+#skillsH{
+    grid-area: skills;
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+}
+
+#skill1{
+    grid-area: skill1;
+    padding: 15px;
+}
+#skill2{
+    grid-area: skill2;
+    padding: 15px;
+}
+#skill3{
+    grid-area: skill3;
+    padding: 15px;
+}
+#skill4{
+    grid-area: skill4;
+    padding: 15px;
+}
+#skill5{
+    grid-area: skill5;
+    padding: 15px;
+}
+#skill6{
+    grid-area: skill6;
+    padding: 15px;
+}
+
+.skillName{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.skillsContainer{
+    width: 100%;
+    background-color: darkgrey;
+}
+.skills{
+    text-align: right;
     padding: 10px;
+    color: white;
+}
+
+.RSLogix5000{
+    width: 60%;
+    background-color: crimson;
+}
+.robotics{
+    width: 25%;
+    background-color: darkorange;
+}
+.vision{
+    width: 35%;
+    background-color: darkblue;
+}
+.c\+\+{
+    width: 15%;
+    background-color: chocolate;
+}
+.python{
+    width: 20%;
+    background-color: darkgreen;
+}
+.java{
+    width: 5%;
+    background-color: blueviolet;
 }
 
 .container{
@@ -185,6 +274,23 @@ ul {
             "desc"
             "homePic"
             "footer";
+    }
+
+    .three{
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr 50vh;
+        grid-template-areas:
+            "blank"
+            "experience"
+            "work1"
+            "work2"
+            "skills"
+            "skill1"
+            "skill2"
+            "skill3"
+            "skill4"
+            "skill5"
+            "skill6";
     }
 
     #introHead{
