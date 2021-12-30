@@ -19,6 +19,7 @@ ul {
 .descText{
     font-size: 20px;
     padding: 15px;
+    text-align: center;
 }
 
 .one{
@@ -45,19 +46,28 @@ ul {
 }
 
 .three{
-    height: 200vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 15vh 10vh .6fr .1fr 10vh 10vh .25fr 25vh;
+    grid-template-rows: 15vh 10vh .6fr .1fr;
        grid-template-areas:
         "blank blank blank blank"
         "title title title title"
-        "work1 work1 work2 work2"
-        "skills skills skills skills"
+        "work1 work1 work2 work2";
+    background: rgb(176,137,104);
+}
+
+.four{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 10vh .25fr 25vh;
+    grid-template-areas:
+        "blank blank blank blank"
+        "title title title title"
         "skill1 skill2 skill3 skill4"
         "skill5 skill6 skill7 skill8"
         "skill9 skill10 skill11 skill12";
-    background: rgb(176,137,104);
 }
 
 .pageTitle{
@@ -140,14 +150,6 @@ ul {
 }
 
 
-
-#abtH{
-    grid-area: title;
-    justify-self: center;
-    align-content: end;
-    font-size: 30px;
-}
-
 #abtP{
     align-content: start;
     justify-content: center;
@@ -201,13 +203,6 @@ ul {
     text-align: center;
 }
 
-#skillsH{
-    grid-area: skills;
-    justify-self: center;
-    align-self: center;
-    font-size: 30px;
-}
-
 #skill1{
     grid-area: skill1;
     padding: 15px;
@@ -232,6 +227,14 @@ ul {
     grid-area: skill6;
     padding: 15px;
 }
+#skill7{
+    grid-area: skill7;
+    padding: 15px;
+}
+#skill8{
+    grid-area: skill8;
+    padding: 15px;
+}
 
 .skillName{
     font-size: 20px;
@@ -240,14 +243,16 @@ ul {
 .skillsContainer{
     width: 100%;
     background-color: darkgrey;
+    border-radius: 5px;
 }
 .skills{
     text-align: right;
     padding: 10px;
     color: white;
+    border-radius: 5px;
 }
 
-.RSLogix5000{
+.PLC{
     width: 60%;
     background-color: crimson;
 }
@@ -268,8 +273,16 @@ ul {
     background-color: darkgreen;
 }
 .java{
-    width: 5%;
+    width: 10%;
     background-color: blueviolet;
+}
+.html{
+    width: 10%;
+    background-color: darkorange;
+}
+.git{
+    width: 5%;
+    background-color: darkgoldenrod;
 }
 
 .container{
@@ -310,20 +323,30 @@ ul {
 
     .three{
         grid-template-columns: 1fr;
-        grid-template-rows: 15vh 40px 1fr 1fr .25fr .25fr .25fr .25fr .25fr .25fr .25fr .5fr 10vh;
+        grid-template-rows: 15vh 40px 1fr 1fr 30vh;
         grid-template-areas:
             "blank"
             "title"
             "work1"
-            "work2"
-            "skills"
+            "work2";
+        height: 175vh;
+    }
+    .four{
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh .2fr 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh;
+        grid-template-areas:
+            "blank"
+            "title"
             "skill1"
             "skill2"
             "skill3"
             "skill4"
             "skill5"
-            "skill6";
-        height: 250vh;
+            "skill6"
+            "skill7"
+            "skill8"
+            "skill9";
+        height: 200vh;
     }
 
     #introHead{
